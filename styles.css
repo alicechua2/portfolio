@@ -79,7 +79,9 @@ a {
 .navbar-brand {
     font-weight: 700;
     font-size: 1.5rem;
-    color: var(--primary-color) !important;
+    color: #124a60;
+    stroke-width: 1px;
+    stroke:var(--light-color);
 }
 
 .nav-link {
@@ -151,9 +153,9 @@ a {
 }
 
 .hero-image .image-wrapper {
-    width: 100%;
+    width: 85%;
     height: 0;
-    padding-bottom: 100%;
+    padding-bottom: 85%;
     position: relative;
     border-radius: 50%;
     overflow: hidden;
@@ -314,6 +316,15 @@ a, .btn {
     color: var(--text-color);
     margin-bottom: 15px;
     font-size: 0.9rem;
+}
+.project-content .btn .btn-sm {
+    display: inline-block;
+    background-color: var(--light-color);
+    color: var(--primary-dark);
+    padding: 3px 10px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 600;
 }
 
 /* About Content */
@@ -651,20 +662,21 @@ footer {
 }
 
 footer h3 {
-    color: white;
+    color: #124a60;
     margin-bottom: 15px;
 }
 
 footer p {
-    opacity: 0.8;
+    opacity: 1;
+    color:#124a60;
 }
 
 .copyright {
     margin-top: 30px;
     padding-top: 20px;
-    border-top: 1px solid rgba(255,255,255,0.1);
+    border-top: 1px solid rgb(255, 255, 255);
     text-align: center;
-    opacity: 0.7;
+    opacity: 10;
     font-size: 0.9rem;
 }
 
@@ -847,6 +859,8 @@ body.scrolled::before {
     z-index: 2;
 }
 
+
+
 /* Make sure profile image container doesn't block clicks */
 .profile-image-container {
     position: relative;
@@ -935,3 +949,81 @@ body.scrolled::before {
     background: white;
     border-radius: 0 0 8px 8px;
 }
+
+/* Animated Header & Footer */
+.navbar, footer {
+    background: linear-gradient(-45deg,  #23a6d5, #f8bbd0);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    color: white;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Glass effect for navbar */
+.navbar {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+}
+
+/* Footer styling */
+footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 30px 0;
+}
+
+/* Main content styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Navbar links */
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255,255,255,0.9);
+    transition: all 0.3s ease;
+    padding: 8px 15px;
+    border-radius: 4px;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+    color: white;
+    background: rgba(255,255,255,0.2);
+    transform: translateY(-2px);
+}
+
+
+
+.social-links a:hover {
+    transform: translateY(-3px) scale(1.1);
+    color: #f8bbd0;
+}
+
+/* Smooth scroll behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Logo styling */
+.alice-logo {
+    height: 30px;
+    width: auto;
+    vertical-align: middle;
+}
+
+/* For larger screens */
+@media (min-width: 992px) {
+    .alice-logo {
+        height: 40px; 
+    }
+}
+
+
