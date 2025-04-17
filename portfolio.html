@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZLGD53NRCR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ZLGD53NRCR');
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Alice Chua</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+     <!-- Primary Meta Tags -->
+     <meta name="description" content="Creative multimedia portfolio showcasing web development, design, and video editing projects. Explore my work and connect for collaborations.">
+     <meta name="keywords" content="portfolio, web development, graphic design, video editing, multimedia projects">
+     <meta name="author" content="Alice Chua">
+     <!-- Open Graph / Social Media Meta Tags (for rich sharing) -->
+      <meta property="og:title" content="Multimedia Portfolio | Creative Developer & Designer">
+      <meta property="og:description" content="Explore my projects in web development, design, and video editing. Let's collaborate!">
+      <meta property="og:type" content="website">
+      <meta property="og:url" content="https://alicechua2.github.io/portfolio.com">
+
+     <!-- Twitter Meta Tags -->
+      <meta name="twitter:card" content="summary_large_image">
+    
+    <style>
+        /* Modal styles */
+        .project-modal .modal-content {
+            background-color: #f8f9fa;
+            border-radius: 10px;
+        }
+        .project-modal .modal-header {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+        .project-modal .modal-title {
+            font-weight: 700;
+        }
+        .project-modal .modal-body {
+            padding-top: 0;
+        }
+        .project-modal .project-media {
+            margin-bottom: 20px;
+        }
+        .project-modal .project-media iframe,
+        .project-modal .project-media img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .project-modal .skills-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .project-modal .skills-list li {
+            display: inline-block;
+            background-color: #e9ecef;
+            padding: 5px 10px;
+            margin-right: 5px;
+            margin-bottom: 5px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+        .project-modal .btn-full-project {
+            background-color: #6c757d;
+            color: white;
+            border: none;
+            padding: 8px 20px;
+            border-radius: 20px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 15px;
+        }
+        .project-modal .btn-full-project:hover {
+            background-color: #5a6268;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+      <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #6a4c93;">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <img src="Arisu logo buterfly.png" alt="Alice Chua" class="alice-logo me-2" style="height: 60px; margin: -10px 0;">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link  px-3" href="index.html" style="font-size: 1.1rem;">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-3" href="about.html" style="font-size: 1.1rem;">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active px-3" href="portfolio.html" style="font-size: 1.1rem;">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-3" href="resume.html" style="font-size: 1.1rem;">Skills and Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-3" href="contact.html" style="font-size: 1.1rem;">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+    <!-- Portfolio Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>My Portfolio</h1>
+            <p>A collection of my creative and technical projects</p>
+        </div>
+    </section>
+
+    <!-- Portfolio Filter -->
+    <section class="portfolio-filter">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Development</button>
+                <button class="filter-btn" data-filter="video">Video Editing</button>
+                <button class="filter-btn" data-filter="design">Design</button>
+                <button class="filter-btn" data-filter="hardware">Hardware</button>
+                <button class="filter-btn" data-filter="animation">Animation</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Grid -->
+    <section class="portfolio-grid">
+        <div class="container">
+            <div class="row">
+                <!-- Web Development Projects -->
+                <div class="col-md-4 portfolio-item" data-category="web" id="web-dev">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <iframe src="https://drive.google.com/file/d/1NfLSgVBewpKiE8xyAmz2yuMQNDU42ciy/preview"  
+                                width="800" 
+                                height="360" 
+                                allow="autoplay" 
+                                frameborder="0" 
+                                allowfullscreen 
+                                class="project-video">
+                            </iframe>
+                            <div class="overlay">
+                                <button class="view-btn" data-bs-toggle="modal" data-bs-target="#projectModal1">View Project</button>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>Advertisement Website</h3>
+                            <p>HTML, CSS, JavaScript, Adobe After Effects</p>
+                            <span class="category">Web Development</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 portfolio-item" data-category="web">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="image (2).png" alt="Media Sharing Platform">
+                            <div class="overlay">
+                                <button class="view-btn" data-bs-toggle="modal" data-bs-target="#projectModal2">View Project</button>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>Media Sharing Platform</h3>
+                            <p>PHP, JavaScript, XML, CSS, Bootstrap</p>
+                            <span class="category">Web Development</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Video Editing Projects -->
+                <div class="col-md-4 portfolio-item" data-category="video" id="video">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <iframe src="https://drive.google.com/file/d/1u2dgZ0CwDXPYya8KYsDzesf0K2Q_0Uvj/preview"  
+                                width="800" 
+                                height="360" 
+                                allow="autoplay" 
+                                frameborder="0" 
+                                allowfullscreen 
+                                class="project-video">
+                            </iframe>
+                            <div class="overlay">
+                                <button class="view-btn" data-bs-toggle="modal" data-bs-target="#projectModal3">View Project</button>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>Anti-Bribery Short Film</h3>
+                            <p>Adobe Premiere Pro, Video Editing</p>
+                            <span class="category">Video Editing</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 portfolio-item" data-category="video">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <iframe src="https://drive.google.com/file/d/1xzIew4ZVp6Uj6N4BO8VgQ-BC7pdN9VIT/preview"  
+                                width="800" 
+                                height="360" 
+                                allow="autoplay" 
+                                frameborder="0" 
+                                allowfullscreen 
+                                class="project-video">
+                            </iframe>
+                            <div class="overlay">
+                                <button class="view-btn" data-bs-toggle="modal" data-bs-target="#projectModal4">View Project</button>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>PediaSure Advertisement</h3>
+                            <p>Adobe After Effects, Premiere Pro</p>
+                            <span class="category">Video Editing</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Design Projects -->
+                <div class="col-md-4 portfolio-item" data-category="design" id="design">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="IMG_20240806_182336.jpg" alt="Packaging Design">
+                            <div class="overlay">
+                                <button class="view-btn" data-bs-toggle="modal" data-bs-target="#projectModal5">View Project</button>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>Fragrance Packaging</h3>
+                            <p>Adobe Photoshop, Illustrator</p>
+                            <span class="category">Design</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 portfolio-item" data-category="design">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="poster.png" alt="Art Deco Poster">
+                            <div class="overlay">
+                                <button class="view-btn" data-bs-toggle="modal" data-bs-target="#projectModal6">View Project</button>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>Art Deco Poster</h3>
+                            <p>Adobe Illustrator, Typography</p>
+                            <span class="category">Design</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Hardware Projects -->
+                <div class="col-md-4 portfolio-item" data-category="hardware" id="hardware">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <iframe src="https://drive.google.com/file/d/1Fc6yFwfKWss6svDPoJLC3xaEOYSMU5LP/preview"  
+                                width="800" 
+                                height="360" 
+                                allow="autoplay" 
+                                frameborder="0" 
+                                allowfullscreen 
+                                class="project-video">
+                            </iframe>
+                            <div class="overlay">
+                                <button class="view-btn" data-bs-toggle="modal" data-bs-target="#projectModal7">View Project</button>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>Autonomous Plant System</h3>
+                            <p>Arduino, PHP, HTML</p>
+                            <span class="category">Hardware</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Animation Projects -->
+                <div class="col-md-4 portfolio-item" data-category="animation" id="animation">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <iframe src="https://drive.google.com/file/d/1nGUGz5J7Wl90HkzU7a6HH3My0ifLakvq/preview"  
+                                width="800" 
+                                height="360" 
+                                allow="autoplay" 
+                                frameborder="0" 
+                                allowfullscreen 
+                                class="project-video">
+                            </iframe>
+                            <div class="overlay">
+                                <button class="view-btn" data-bs-toggle="modal" data-bs-target="#projectModal8">View Project</button>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>The Sweet Horror Factory</h3>
+                            <p>Adobe Illustrator, Audition, Photoshop</p>
+                            <span class="category">Animation</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Database Projects -->
+                <div class="col-md-4 portfolio-item" data-category="web" id="database">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="dbs2.png" alt="Database">
+                            <div class="overlay">
+                                <button class="view-btn" data-bs-toggle="modal" data-bs-target="#projectModal9">View Project</button>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>Database System</h3>
+                            <p>XAMPP, SQL</p>
+                            <span class="category">Web Development</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Modals -->
+    <!-- Modal 1: Advertisement Website -->
+    <div class="modal fade project-modal" id="projectModal1" tabindex="-1" aria-labelledby="projectModal1Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="projectModal1Label">Advertisement Website</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="project-media">
+                        <iframe src="https://drive.google.com/file/d/1NfLSgVBewpKiE8xyAmz2yuMQNDU42ciy/preview"  
+                            width="100%" 
+                            height="400" 
+                            allow="autoplay" 
+                            frameborder="0" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="project-description">
+                        <p>A responsive advertisement website created to showcase products with interactive elements and animations.</p>
+                        <h6>Skills & Technologies:</h6>
+                        <ul class="skills-list">
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>JavaScript</li>
+                            <li>Adobe After Effects</li>
+                            <li>Responsive Design</li>
+                        </ul>
+                        <a href="https://www.canva.com/design/DAGRpAr46lg/sgvljge4OtxZw7zUD8zuvw/edit?utm_content=DAGRpAr46lg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" class="btn btn-full-project">View Full Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2: Media Sharing Platform -->
+    <div class="modal fade project-modal" id="projectModal2" tabindex="-1" aria-labelledby="projectModal2Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="projectModal2Label">Media Sharing Platform</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="project-media">
+                        <img src="image (2).png" alt="Media Sharing Platform" class="img-fluid">
+                    </div>
+                    <div class="project-description">
+                        <p>A platform for users to upload, share, and view various media content with user authentication and content management.</p>
+                        <h6>Skills & Technologies:</h6>
+                        <ul class="skills-list">
+                            <li>PHP</li>
+                            <li>JavaScript</li>
+                            <li>XML</li>
+                            <li>CSS</li>
+                            <li>Bootstrap</li>
+                            <li>User Authentication</li>
+                        </ul>
+                        <a href="https://www.canva.com/design/DAGRpAr46lg/sgvljge4OtxZw7zUD8zuvw/edit?utm_content=DAGRpAr46lg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" class="btn btn-full-project">View Full Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3: Anti-Bribery Short Film -->
+    <div class="modal fade project-modal" id="projectModal3" tabindex="-1" aria-labelledby="projectModal3Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="projectModal3Label">Anti-Bribery Short Film</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="project-media">
+                        <iframe src="https://drive.google.com/file/d/1u2dgZ0CwDXPYya8KYsDzesf0K2Q_0Uvj/preview"  
+                            width="100%" 
+                            height="400" 
+                            allow="autoplay" 
+                            frameborder="0" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="project-description">
+                        <p>A short film created to raise awareness about the dangers of bribery and corruption in society.</p>
+                        <h6>Skills & Technologies:</h6>
+                        <ul class="skills-list">
+                            <li>Adobe Premiere Pro</li>
+                            <li>Video Editing</li>
+                            <li>Color Grading</li>
+                            <li>Sound Design</li>
+                            <li>Storytelling</li>
+                        </ul>
+                        <a href="https://www.canva.com/design/DAGRpAr46lg/sgvljge4OtxZw7zUD8zuvw/edit?utm_content=DAGRpAr46lg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" class="btn btn-full-project">View Full Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 4: PediaSure Advertisement -->
+    <div class="modal fade project-modal" id="projectModal4" tabindex="-1" aria-labelledby="projectModal4Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="projectModal4Label">PediaSure Advertisement</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="project-media">
+                        <iframe src="https://drive.google.com/file/d/1xzIew4ZVp6Uj6N4BO8VgQ-BC7pdN9VIT/preview"  
+                            width="100%" 
+                            height="400" 
+                            allow="autoplay" 
+                            frameborder="0" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="project-description">
+                        <p>A commercial advertisement for PediaSure nutritional products featuring animation and motion graphics.</p>
+                        <h6>Skills & Technologies:</h6>
+                        <ul class="skills-list">
+                            <li>Adobe After Effects</li>
+                            <li>Adobe Premiere Pro</li>
+                            <li>Motion Graphics</li>
+                            <li>Animation</li>
+                            <li>Sound Editing</li>
+                        </ul>
+                        <a href="https://www.canva.com/design/DAGRpAr46lg/sgvljge4OtxZw7zUD8zuvw/edit?utm_content=DAGRpAr46lg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" class="btn btn-full-project">View Full Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 5: Fragrance Packaging -->
+    <div class="modal fade project-modal" id="projectModal5" tabindex="-1" aria-labelledby="projectModal5Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="projectModal5Label">Fragrance Packaging</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="project-media">
+                        <img src="IMG_20240806_182336.jpg" alt="Fragrance Packaging" class="img-fluid">
+                    </div>
+                    <div class="project-description">
+                        <p>Custom packaging design for a luxury fragrance line featuring elegant typography and minimalist design.</p>
+                        <h6>Skills & Technologies:</h6>
+                        <ul class="skills-list">
+                            <li>Adobe Photoshop</li>
+                            <li>Adobe Illustrator</li>
+                            <li>Packaging Design</li>
+                            <li>Typography</li>
+                            <li>Brand Identity</li>
+                        </ul>
+                        <a href="https://www.canva.com/design/DAGRpAr46lg/sgvljge4OtxZw7zUD8zuvw/edit?utm_content=DAGRpAr46lg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" class="btn btn-full-project">View Full Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 6: Art Deco Poster -->
+    <div class="modal fade project-modal" id="projectModal6" tabindex="-1" aria-labelledby="projectModal6Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="projectModal6Label">Art Deco Poster</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="project-media">
+                        <img src="poster.png" alt="Art Deco Poster" class="img-fluid">
+                    </div>
+                    <div class="project-description">
+                        <p>A poster design inspired by the Art Deco movement featuring geometric patterns and elegant typography.</p>
+                        <h6>Skills & Technologies:</h6>
+                        <ul class="skills-list">
+                            <li>Adobe Illustrator</li>
+                            <li>Typography</li>
+                            <li>Vector Illustration</li>
+                            <li>Color Theory</li>
+                        </ul>
+                        <a href="https://www.canva.com/design/DAGRpAr46lg/sgvljge4OtxZw7zUD8zuvw/edit?utm_content=DAGRpAr46lg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" class="btn btn-full-project">View Full Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 7: Autonomous Plant System -->
+    <div class="modal fade project-modal" id="projectModal7" tabindex="-1" aria-labelledby="projectModal7Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="projectModal7Label">Autonomous Plant System</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="project-media">
+                        <iframe src="https://drive.google.com/file/d/1Fc6yFwfKWss6svDPoJLC3xaEOYSMU5LP/preview"  
+                            width="100%" 
+                            height="400" 
+                            allow="autoplay" 
+                            frameborder="0" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="project-description">
+                        <p>An automated plant watering system that monitors soil moisture and waters plants when needed.</p>
+                        <h6>Skills & Technologies:</h6>
+                        <ul class="skills-list">
+                            <li>Arduino</li>
+                            <li>PHP</li>
+                            <li>HTML</li>
+                            <li>IoT</li>
+                            <li>Sensor Integration</li>
+                        </ul>
+                        <a href="https://www.canva.com/design/DAGRpAr46lg/sgvljge4OtxZw7zUD8zuvw/edit?utm_content=DAGRpAr46lg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" class="btn btn-full-project">View Full Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 8: The Sweet Horror Factory -->
+    <div class="modal fade project-modal" id="projectModal8" tabindex="-1" aria-labelledby="projectModal8Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="projectModal8Label">The Sweet Horror Factory</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="project-media">
+                        <iframe src="https://drive.google.com/file/d/1nGUGz5J7Wl90HkzU7a6HH3My0ifLakvq/preview"  
+                            width="100%" 
+                            height="400" 
+                            allow="autoplay" 
+                            frameborder="0" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="project-description">
+                        <p>An animated short film combining elements of horror and comedy in a candy factory setting.</p>
+                        <h6>Skills & Technologies:</h6>
+                        <ul class="skills-list">
+                            <li>Adobe Illustrator</li>
+                            <li>Adobe Audition</li>
+                            <li>Adobe Photoshop</li>
+                            <li>2D Animation</li>
+                            <li>Character Design</li>
+                        </ul>
+                        <a href="https://www.canva.com/design/DAGRpAr46lg/sgvljge4OtxZw7zUD8zuvw/edit?utm_content=DAGRpAr46lg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" class="btn btn-full-project">View Full Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 9: Database System -->
+    <div class="modal fade project-modal" id="projectModal9" tabindex="-1" aria-labelledby="projectModal9Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="projectModal9Label">Database System</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="project-media">
+                        <img src="dbs2.png" alt="Database System" class="img-fluid">
+                    </div>
+                    <div class="project-description">
+                        <p>A comprehensive database management system for storing and retrieving organizational data.</p>
+                        <h6>Skills & Technologies:</h6>
+                        <ul class="skills-list">
+                            <li>XAMPP</li>
+                            <li>SQL</li>
+                            <li>Database Design</li>
+                            <li>CRUD Operations</li>
+                            <li>Data Modeling</li>
+                        </ul>
+                        <a href="https://www.canva.com/design/DAGRpAr46lg/sgvljge4OtxZw7zUD8zuvw/edit?utm_content=DAGRpAr46lg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" class="btn btn-full-project">View Full Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Alice Chua</h3>
+                    <p>Multimedia Computing Student & Creative Developer</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/alice-2223ac/"><i class="fab fa-linkedin"></i></a>
+                        <a href="tel:+601136662402"><i class="fas fa-phone"></i></a>
+                        <a href="https://www.canva.com/design/DAGReTGLkLk/32-gWRilmjcoEfolP2f6UA/view?utm_content=DAGReTGLkLk&utm_campaign=designshare&utm_medium=link&utm_source=editor"><i class="fas fa-user"></i></a>
+                        <a href="https://www.instagram.com/alice_chua_/"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Alice Chua. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Add smooth scrolling to all links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        
+        // Change navbar background on scroll
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.style.boxShadow = '0 4px 30px rgba(0, 0, 0, 0.2)';
+            } else {
+                navbar.style.boxShadow = '0 2px 20px rgba(0,0,0,0.1)';
+            }
+        });
+    
+        // Portfolio filtering functionality
+        document.querySelectorAll('.filter-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                // Remove active class from all buttons
+                document.querySelectorAll('.filter-btn').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+                
+                // Add active class to clicked button
+                this.classList.add('active');
+                
+                const filterValue = this.getAttribute('data-filter');
+                const portfolioItems = document.querySelectorAll('.portfolio-item');
+                
+                portfolioItems.forEach(item => {
+                    if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Initialize all modals
+        document.addEventListener('DOMContentLoaded', function() {
+            const modals = document.querySelectorAll('.modal');
+            modals.forEach(modal => {
+                new bootstrap.Modal(modal);
+            });
+        });
+
+        // When clicking modal close button (X)
+        document.querySelectorAll('.btn-close').forEach(button => {
+            button.addEventListener('click', function() {
+                const modal = this.closest('.modal');
+                const modalInstance = bootstrap.Modal.getInstance(modal);
+                if (modalInstance) {
+                    modalInstance.hide();
+                    // Reset body styles
+                    document.body.style.overflow = '';
+                    document.body.style.paddingRight = '';
+                }
+            });
+        });
+
+        // When clicking outside the modal
+        document.querySelectorAll('.modal').forEach(modal => {
+            modal.addEventListener('click', function(e) {
+                if (e.target === this) {
+                    const modalInstance = bootstrap.Modal.getInstance(this);
+                    if (modalInstance) {
+                        modalInstance.hide();
+                        // Reset body styles
+                        document.body.style.overflow = '';
+                        document.body.style.paddingRight = '';
+                    }
+                }
+            });
+        });
+
+        // Add keyboard support for closing modals
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                const openModal = document.querySelector('.modal.show');
+                if (openModal) {
+                    const modalInstance = bootstrap.Modal.getInstance(openModal);
+                    if (modalInstance) {
+                        modalInstance.hide();
+                        // Reset body styles
+                        document.body.style.overflow = '';
+                        document.body.style.paddingRight = '';
+                    }
+                }
+            }
+        });
+
+        // Ensure body scrolling is restored when modal is closed
+        document.querySelectorAll('.modal').forEach(modal => {
+            modal.addEventListener('hidden.bs.modal', function () {
+                document.body.style.overflow = '';
+                document.body.style.paddingRight = '';
+            });
+        });
+    </script>
+</body>
+</html>
