@@ -1472,3 +1472,49 @@ html {
     background-color: #5a3c83;
     transform: translateY(-3px);
 }
+
+/* ... existing code ... */
+
+/* Resume sidebar navigation */
+.resume-layout {
+    position: relative;
+}
+
+.resume-sidebar {
+    position: sticky;
+    top: 110px; /* below fixed navbar */
+    padding-right: 10px;
+    border-right: 1px solid rgba(0,0,0,0.08);
+}
+
+.resume-sidebar h5 {
+    font-weight: 700;
+    color: var(--dark-color);
+}
+
+.resume-sidebar .nav-link {
+    color: var(--dark-color);
+    padding: 6px 10px;
+    border-radius: 6px;
+    margin-bottom: 6px;
+    transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.resume-sidebar .nav-link:hover {
+    background-color: rgba(129, 216, 208, 0.15); /* light tiffany */
+    color: var(--tiffany-blue);
+    transform: translateX(3px);
+}
+
+.resume-sidebar .nav-link.active {
+    background-color: rgba(129, 216, 208, 0.2);
+    color: var(--tiffany-blue);
+    font-weight: 600;
+}
+
+@media (max-width: 991.98px) {
+    .resume-layout {
+        padding-top: 0;
+    }
+}
+
