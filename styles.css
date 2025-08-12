@@ -428,6 +428,59 @@ a, .btn {
     padding: 40px 0 20px;
     background-color: white;
 }
+/* Portfolio Filter */
+.portfolio-filter {
+    padding: 40px 0 20px;
+    background-color: white;
+}
+
+/* Portfolio Search Bar */
+.search-container {
+    margin-bottom: 30px;
+}
+
+.search-box {
+    position: relative;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.search-box input {
+    padding: 15px 45px 15px 20px;
+    border-radius: 30px;
+    border: 2px solid rgba(0,0,0,0.1);
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.search-box input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 4px 20px rgba(135, 206, 235, 0.2);
+    transform: translateY(-2px);
+}
+
+.search-box input::placeholder {
+    color: #999;
+    font-style: italic;
+}
+
+.search-icon {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+    font-size: 1.1rem;
+    pointer-events: none;
+}
+
+.search-box input:focus + .search-icon {
+    color: var(--primary-color);
+}
+
+.filter-buttons {
 
 .filter-buttons {
     display: flex;
@@ -1517,4 +1570,5 @@ html {
         padding-top: 0;
     }
 }
+
 
