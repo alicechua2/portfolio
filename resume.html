@@ -50,9 +50,55 @@
     </section>
 
     <!-- Resume Content -->
-    <div class="container my-5">
-        <!-- Work Experience -->
-        <section class="resume-section">
+    <div class="container my-5 resume-layout">
+        <div class="row">
+            <aside class="col-lg-3 d-none d-lg-block">
+                <nav class="resume-sidebar" aria-label="Section navigation">
+                    <h5 class="mb-3">On this page</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item"><a class="nav-link resume-nav-link" href="#education">Education</a></li>
+                        <li class="nav-item"><a class="nav-link resume-nav-link" href="#experience">Working Experience</a></li>
+                        <li class="nav-item"><a class="nav-link resume-nav-link" href="#technical-skills">Hard [Technical] Skills</a></li>
+                        <li class="nav-item"><a class="nav-link resume-nav-link" href="#soft-skills">Soft Skills</a></li>
+                        <li class="nav-item"><a class="nav-link resume-nav-link" href="#languages">Languages</a></li>
+                        <li class="nav-item"><a class="nav-link resume-nav-link" href="#achievements">Achievements</a></li>
+                        <li class="nav-item"><a class="nav-link resume-nav-link" href="#curriculum">Curriculum Experience</a></li>
+                    </ul>
+                </nav>
+            </aside>
+            <div class="col-lg-9">
+        <!-- Education -->
+        <section id="education" class="resume-section">
+            <h2>Education</h2>
+            <div class="education-item">
+                <h3 class="education-school">YPC College, Liverpool John Moore's University</h3>
+                <div class="education-degree">BSc of Multimedia Computing (2021- Current)</div>
+                <div class="education-details">
+                    <p>CGPA for Lvl 6 (3rd Year): 3.89</p>
+                    <p>CGPA for Lvl 5 (2nd Year): 3.80</p>
+                    <p>CGPA for Lvl 4 (1st Year): 3.67</p>
+                </div>
+            </div>
+            <div class="education-item">
+                <h3 class="education-school">YPC College, Liverpool John Moore's University</h3>
+                <div class="education-degree">Foundation in Business and Information Technology (2021-2022)</div>
+                <div class="education-details">
+                    <p>CGPA: 3.71</p>
+                    <p>Related Course: Digital Business intelligence, Principle of Management, Programming(C++)</p>
+                    <p>MUET: Band 4.0</p>
+                </div>
+            </div>
+            <div class="education-item">
+                <h3 class="education-school">SMK Cheras, KL</h3>
+                <div class="education-degree">High School (2016 - 2021)</div>
+                <div class="education-details">
+                    <p>SPM: 2A, 2A-, 1B+, 1C, 1D</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Working Experience -->
+        <section id="experience" class="resume-section">
             <h2>Working Experience</h2>
             <div class="experience-item">
                 <h3 class="experience-title">Sales Assistant/Pharmacist Assistant (Part-Time)</h3>
@@ -77,8 +123,8 @@
         </section>
 
         <!-- Technical Skills -->
-        <section class="resume-section">
-            <h2>Technical Skills</h2>
+        <section id="technical-skills" class="resume-section">
+            <h2>Hard [Technical] Skills</h2>
             <div class="skills-grid">
                 <div class="skill-category">
                     <h3>Programming</h3>
@@ -87,6 +133,8 @@
                         <li>HTML5, CSS, XAMPP, PHP</li>
                         <li>BOOTSTRAP, C++, C</li>
                         <li>MySQL and Digital Works (Circuit)</li>
+                        <li>Power BI & SSMS</li>
+                        <li>Unreal Engine 5</li>
                     </ul>
                 </div>
                 <div class="skill-category">
@@ -96,15 +144,17 @@
                         <li>Adobe Illustrator</li>
                         <li>Adobe Audition</li>
                         <li>Adobe After Effect</li>
+                        <li>Adobe InDesign</li>
                         <li>Premiere Pro</li>
                         <li>Dreamweaver CS6</li>
                         <li>Animate & Canva</li>
+                        <li>Figma</li>
                     </ul>
                 </div>
                 <div class="skill-category">
                     <h3>Other Skills</h3>
                     <ul class="skill-list">
-                        <li>DBMS: MS Excel, Access, Visio & IBM</li>
+                        <li>DBMS: MS Excel, Project, Access, Visio & IBM</li>
                         <li>Basic Software: MS PowerPoint & Words</li>
                         <li>Hardware: Arduino Uno</li>
                     </ul>
@@ -112,39 +162,52 @@
             </div>
         </section>
 
-        <!-- Education -->
-        <section class="resume-section">
-            <h2>Education</h2>
-            <div class="education-item">
-                <h3 class="education-school">YPC College, Liverpool John Moore's University</h3>
-                <div class="education-degree">BSc of Multimedia Computing (2021- Current)</div>
-                <div class="education-details">
-                    <p>CGPA for Lvl 5 (2nd Year): 3.8</p>
-                    <p>CGPA for Lvl 4 (1st Year): 3.67</p>
+        <!-- Soft Skills -->
+        <section id="soft-skills" class="resume-section">
+            <h2>Soft Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Communication & Leadership</h3>
+                    <ul class="skill-list">
+                        <li>Communication</li>
+                        <li>Public Speaking</li>
+                        <li>Team Collaboration</li>
+                        <li>Leadership</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Professional Development</h3>
+                    <ul class="skill-list">
+                        <li>Critical Thinking</li>
+                        <li>Time Management</li>
+                        <li>Adaptability</li>
+                        <li>Problem Solving</li>
+                    </ul>
                 </div>
             </div>
-            <div class="education-item">
-                <h3 class="education-school">YPC College, Liverpool John Moore's University</h3>
-                <div class="education-degree">Foundation in Business and Information Technology (2021-2022)</div>
-                <div class="education-details">
-                    <p>CGPA: 3.71</p>
-                    <p>Related Course: Digital Business intelligence, Principle of Management, Programming(C++)</p>
-                    <p>MUET: Band 4.0</p>
-                </div>
-            </div>
-            <div class="education-item">
-                <h3 class="education-school">SMK Cheras, KL</h3>
-                <div class="education-degree">High School (2016 - 2021)</div>
-                <div class="education-details">
-                    <p>SPM: 2A, 2A-, 1B+, 1C, 1D</p>
+        </section>
+
+        <!-- Languages -->
+        <section id="languages" class="resume-section">
+            <h2>Languages</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Proficiency Levels</h3>
+                    <ul class="skill-list">
+                        <li>English [Fluent]</li>
+                        <li>Chinese [Fluent]</li>
+                        <li>Bahasa Melayu [Fluent]</li>
+                        <li>Cantonese [Fluent]</li>
+                    </ul>
                 </div>
             </div>
         </section>
 
         <!-- Achievements -->
-        <section class="resume-section">
+        <section id="achievements" class="resume-section">
             <h2>Achievements</h2>
             <ul class="achievements-list">
+                <li>Recognition Award for Final Year Project (SILO SDN BHD)</li>
                 <li>1st Place for Voice of YPC 2024 (Singing Comp.)</li>
                 <li>1st Place for Dashboard Design for Digital Business Intelligence [Foundation, 2022]</li>
                 <li>Participated in High School Scrabble Competition (State) [2019]</li>
@@ -154,7 +217,7 @@
         </section>
 
         <!-- Curriculum Experience -->
-        <section class="resume-section">
+        <section id="curriculum" class="resume-section">
             <h2>Curriculum Experience</h2>
             <div class="experience-item">
                 <h3 class="experience-title">President, Karaoke Club, YPC College</h3>
@@ -181,6 +244,8 @@
                 </ul>
             </div>
         </section>
+            </div>
+        </div>
     </div>
 
     <!-- Footer -->
@@ -259,6 +324,31 @@
                 behavior: 'smooth'
             });
         });
+
+        // Highlight active section in sidebar on scroll
+        (function() {
+            const sectionIds = ['education','experience','technical-skills','soft-skills','languages','achievements','curriculum'];
+            const navLinks = new Map();
+            sectionIds.forEach(id => {
+                const link = document.querySelector(`.resume-sidebar a[href="#${id}"]`);
+                if (link) navLinks.set(id, link);
+            });
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    const id = entry.target.id;
+                    const link = navLinks.get(id);
+                    if (!link) return;
+                    if (entry.isIntersecting) {
+                        document.querySelectorAll('.resume-sidebar .nav-link').forEach(l => l.classList.remove('active'));
+                        link.classList.add('active');
+                    }
+                });
+            }, { rootMargin: '-30% 0px -60% 0px', threshold: 0.1 });
+            sectionIds.forEach(id => {
+                const el = document.getElementById(id);
+                if (el) observer.observe(el);
+            });
+        })();
 
     </script>
 </body>
