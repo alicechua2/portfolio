@@ -428,11 +428,6 @@ a, .btn {
     padding: 40px 0 20px;
     background-color: white;
 }
-/* Portfolio Filter */
-.portfolio-filter {
-    padding: 40px 0 20px;
-    background-color: white;
-}
 
 /* Portfolio Search Bar */
 .search-container {
@@ -479,8 +474,6 @@ a, .btn {
 .search-box input:focus + .search-icon {
     color: var(--primary-color);
 }
-
-.filter-buttons {
 
 .filter-buttons {
     display: flex;
@@ -1499,6 +1492,7 @@ html {
     position: relative;
     z-index: 1;
 }
+
 .scroll-to-top {
     position: fixed;
     bottom: 30px;
@@ -1525,8 +1519,6 @@ html {
     background-color: #5a3c83;
     transform: translateY(-3px);
 }
-
-/* ... existing code ... */
 
 /* Resume sidebar navigation */
 .resume-layout {
@@ -1570,5 +1562,3 @@ html {
         padding-top: 0;
     }
 }
-
-
