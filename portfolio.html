@@ -125,15 +125,30 @@
     <!-- Portfolio Filter -->
     <section class="portfolio-filter">
         <div class="container">
+            <!-- Search Bar -->
+            <div class="search-container mb-4">
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <div class="search-box">
+                            <input type="text" id="portfolioSearch" class="form-control" placeholder="Search projects, skills, or technologies...">
+                            <i class="fas fa-search search-icon"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
             <div class="filter-buttons">
                 <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="web">Web Development</button>
-                <button class="filter-btn" data-filter="video">Video Editing</button>
-                <button class="filter-btn" data-filter="design">Design</button>
-                <button class="filter-btn" data-filter="desktop-publishing">Desktop Publishing</button>
-                <button class="filter-btn" data-filter="creative-portfolio">Creative Portfolio</button>
-                <button class="filter-btn" data-filter="hardware">Hardware</button>
                 <button class="filter-btn" data-filter="animation">Animation</button>
+                <button class="filter-btn" data-filter="creative-portfolio">Creative Portfolio</button>
+                <button class="filter-btn" data-filter="desktop-publishing">Desktop Publishing</button>
+                <button class="filter-btn" data-filter="design">Design</button>
+                <button class="filter-btn" data-filter="game-development">Game Development</button>
+                <button class="filter-btn" data-filter="hardware">Hardware</button>
+                <button class="filter-btn" data-filter="packaging-design">Packaging Design</button>
+                <button class="filter-btn" data-filter="posters">Posters</button>
+                <button class="filter-btn" data-filter="video">Video Editing</button>
+                <button class="filter-btn" data-filter="web">Web Development</button>
             </div>
         </div>
     </section>
@@ -330,7 +345,7 @@
                 </div>
                 
                 <!-- Design Projects -->
-                <div class="col-md-4 portfolio-item" data-category="design" id="design">
+                <div class="col-md-4 portfolio-item" data-category="packaging-design" id="design">
                     <div class="portfolio-card">
                         <div class="portfolio-image">
                             <img src="IMG_20240806_182336.jpg" alt="Packaging Design">
@@ -341,13 +356,13 @@
                         <div class="portfolio-content">
                             <h3>Fragrance Packaging</h3>
                             <p>Adobe Photoshop, Illustrator</p>
-                            <span class="category">Design</span>
+                            <span class="category">Packaging Design</span>
                         </div>
                     </div>
                 </div>
                 
                 <!-- E-Sports Tournament Poster -->
-                <div class="col-md-4 portfolio-item" data-category="design">
+                <div class="col-md-4 portfolio-item" data-category="posters">
                     <div class="portfolio-card">
                         <div class="portfolio-image">
                             <iframe 
@@ -366,12 +381,12 @@
                         <div class="portfolio-content">
                             <h3>E-Sports Tournament Aug 2025 [HOK]</h3>
                             <p>Adobe Photoshop, Illustrator, Poster Design</p>
-                            <span class="category">Design</span>
+                            <span class="category">Posters</span>
                         </div>
                     </div>
                 </div>
                 <!-- MLBB Poster -->
-                <div class="col-md-4 portfolio-item" data-category="design">
+                <div class="col-md-4 portfolio-item" data-category="posters">
                     <div class="portfolio-card">
                         <div class="portfolio-image">
                             <iframe 
@@ -390,13 +405,13 @@
                         <div class="portfolio-content">
                             <h3>E-Sports Tournament Aug 2025 [MLBB] </h3>
                             <p>Adobe Photoshop, Illustrator, Gaming Design</p>
-                            <span class="category">Design</span>
+                            <span class="category">Posters</span>
                         </div>
                     </div>
                 </div>
                 
                 
-                <div class="col-md-4 portfolio-item" data-category="design">
+                <div class="col-md-4 portfolio-item" data-category="posters">
                     <div class="portfolio-card">
                         <div class="portfolio-image">
                             <img src="poster.png" alt="Art Deco Poster">
@@ -407,7 +422,7 @@
                         <div class="portfolio-content">
                             <h3>Art Deco Poster</h3>
                             <p>Adobe Illustrator, Typography</p>
-                            <span class="category">Design</span>
+                            <span class="category">Posters</span>
                         </div>
                     </div>
                 </div>
@@ -456,6 +471,31 @@
                             <h3>The Sweet Horror Factory</h3>
                             <p>Adobe Illustrator, Audition, Photoshop</p>
                             <span class="category">Animation</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- The Dark Journey Game -->
+                <div class="col-md-4 portfolio-item" data-category="game-development">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <iframe 
+                                src="https://www.youtube.com/embed/jiD99FnXx4Q"  
+                                width="800" 
+                                height="360" 
+                                allow="autoplay; encrypted-media" 
+                                frameborder="0" 
+                                allowfullscreen 
+                                class="project-video">
+                            </iframe>
+                            <div class="overlay">
+                                <button class="view-btn" data-bs-toggle="modal" data-bs-target="#projectModal14">View Project</button>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>The Dark Journey</h3>
+                            <p>Unreal Engine 5, Game Development, 3D Design</p>
+                            <span class="category">Game Development</span>
                         </div>
                     </div>
                 </div>
@@ -917,6 +957,43 @@
         </div>
     </div>
 
+    <!-- Modal 14: The Dark Journey Game -->
+    <div class="modal fade project-modal" id="projectModal14" tabindex="-1" aria-labelledby="projectModal14Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="projectModal14Label">The Dark Journey</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="project-media">
+                        <iframe 
+                            src="https://www.youtube.com/embed/jiD99FnXx4Q"  
+                            width="100%" 
+                            height="400" 
+                            allow="autoplay" 
+                            frameborder="0" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="project-description">
+                        <p>A dark atmospheric game developed using Unreal Engine 5, featuring immersive 3D environments, atmospheric lighting, and engaging gameplay mechanics. The project showcases advanced game development skills and 3D design capabilities.</p>
+                        <h6>Skills & Technologies:</h6>
+                        <ul class="skills-list">
+                            <li>Unreal Engine 5</li>
+                            <li>Game Development</li>
+                            <li>3D Design</li>
+                            <li>Level Design</li>
+                            <li>Game Mechanics</li>
+                            <li>Atmospheric Design</li>
+                        </ul>
+                        <a href="https://www.youtube.com/embed/jiD99FnXx4Q" class="btn btn-full-project">View Full Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Modal: Final Year Project Vlog -->
     <div class="modal fade project-modal" id="projectModalFYP" tabindex="-1" aria-labelledby="projectModalFYPLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered">
@@ -1055,7 +1132,11 @@
                 const portfolioItems = document.querySelectorAll('.portfolio-item');
                 
                 portfolioItems.forEach(item => {
-                    if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                    const itemCategory = item.getAttribute('data-category');
+                    
+                    if (filterValue === 'all' || 
+                        itemCategory === filterValue ||
+                        (filterValue === 'design' && ['posters', 'desktop-publishing', 'packaging-design'].includes(itemCategory))) {
                         item.style.display = 'block';
                     } else {
                         item.style.display = 'none';
@@ -1063,6 +1144,46 @@
                 });
             });
         });
+
+        // Portfolio search functionality
+        const searchInput = document.getElementById('portfolioSearch');
+        if (searchInput) {
+            searchInput.addEventListener('input', function() {
+                const searchTerm = this.value.toLowerCase().trim();
+                const portfolioItems = document.querySelectorAll('.portfolio-item');
+                
+                portfolioItems.forEach(item => {
+                    const title = item.querySelector('h3').textContent.toLowerCase();
+                    const description = item.querySelector('p').textContent.toLowerCase();
+                    const category = item.querySelector('.category').textContent.toLowerCase();
+                    
+                    const matchesSearch = title.includes(searchTerm) || 
+                                        description.includes(searchTerm) || 
+                                        category.includes(searchTerm);
+                    
+                    if (searchTerm === '' || matchesSearch) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+                
+                // Update filter button states when searching
+                if (searchTerm !== '') {
+                    document.querySelectorAll('.filter-btn').forEach(btn => {
+                        btn.classList.remove('active');
+                    });
+                    document.querySelector('.filter-btn[data-filter="all"]').classList.add('active');
+                }
+            });
+            
+            // Clear search when filter buttons are clicked
+            document.querySelectorAll('.filter-btn').forEach(button => {
+                button.addEventListener('click', function() {
+                    searchInput.value = '';
+                });
+            });
+        }
 
         // Initialize all modals
         document.addEventListener('DOMContentLoaded', function() {
